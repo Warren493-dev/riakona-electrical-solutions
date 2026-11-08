@@ -125,7 +125,14 @@ p  { margin: 0 0 1rem; max-width: 62ch; }
   gap: 0.25rem 1.5rem;
   padding-block: 0.5rem;
 }
-.brand img { width: 4.25rem; height: 4.25rem; object-fit: contain; }
+.brand img {
+  width: 10rem;
+  height: auto;
+}
+
+@media (min-width: 48rem) {
+  .brand img { width: 13rem; }
+}
 
 .site-header nav { order: 3; width: 100%; }
 .site-header nav ul {
